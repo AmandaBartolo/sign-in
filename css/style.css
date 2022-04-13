@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+body{
+    height: 100%;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* CONTAINER */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    font-family: 'Libre Baskerville', serif;
+}
+#signin, #signup{
+    background-color: #80cce5f6;
+    color: white;
+    height: 550px;
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h2{
+    font-size: 50px;
+    color: #cc3333;
+    text-shadow: 2px 2px 4px #8f1c1c;
+}
+
+/* FORMULÁRIOS */
+label{
+    font-size: 22px;
+}
+input{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 350px;
+    font-size: 18px;
+    color: #cc3333;
+    font-family: 'Libre Baskerville', serif;
+}
+button{
+    display: block;
+    margin: auto;
+    background-color: #cc3333;
+    border-color: #af2a2a;
+    padding: 18px;
+    border-radius: 30px;
+    width: 130px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Libre Baskerville', serif;;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: transform 200ms ease;
+}
+a{
+    color: white;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1200px){
+    .container {
+        flex-direction: column;
+    }
+    #signin, #signup {
+        width: 400px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
